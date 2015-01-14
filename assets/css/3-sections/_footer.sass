@@ -1,22 +1,15 @@
 footer
-	background: url(../img/bg-img.jpg)
-	background-repeat: no-repeat
-	background-position: 20% 20%
-	background-size: cover
-	
+	@extend %bg-images
+	background-blend-mode: darken, normal
 	.lockup
 		padding: 30px 50px
 		+clearfix
 
 		.logo
-			float: left
-			+size(50px)
-			margin-right: 30px
-
-			path
-				fill: rgba(0,0,0,0.4)
+			
 
 		.content-wrap
+			margin-left: 80px
 			float: left
 
 			a
