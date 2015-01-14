@@ -1,0 +1,27 @@
+# portfolio settings
+title: gautam port
+email: g@email.com
+description: porter cum thinker
+
+#skill list
+skills:
+- {name: Communication, value: '9'}
+- {name: Communication, value: '5'}
+- {name: Communication, value: '10'}
+- {name: Organisation, value: '7'}
+- {name: Communication, value: '8'}
+- {name: Communication, value: '4'}
+
+#skill list
+menu:
+- {name: About, url: '#'}
+- {name: Contact, url: '#'}
+- {name: Clients, url: '#'}
+- {name: Work, url: '#'}
+
+#change site images and content 
+logo: logo.svg
+bg: bg-img.jpg
+avatar: face.jpg
+
+blurb: <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

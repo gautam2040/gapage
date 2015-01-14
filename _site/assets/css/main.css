@@ -242,6 +242,7 @@ h3 {
   padding: 100px 0 50px; }
 
 header {
+  background-image: url(/assets/img/logo.svg), url(/assets/img/bg-img.jpg);
   height: 450px;
   background-blend-mode: normal normal; }
   header .logo {
@@ -281,6 +282,7 @@ header {
     color: white; }
 
 footer {
+  background-image: url(/assets/img/logo.svg), url(/assets/img/bg-img.jpg);
   background-blend-mode: darken, normal; }
   footer .lockup {
     padding: 30px 50px; }
@@ -331,6 +333,8 @@ footer {
   justify-content: space-between;
   -ms-flex-pack: justify; }
   .face-lockup .face-img {
+    background: url(/assets/img/face.jpg) no-repeat;
+    background-position: 50% 50%;
     height: 200px;
     width: 200px;
     border-radius: 50%;
