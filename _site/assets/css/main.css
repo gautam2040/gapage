@@ -147,6 +147,11 @@ td, th {
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+header nav a, header .kicker, footer .lockup .content-wrap .copyright {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #BD5248;
@@ -243,11 +248,7 @@ header {
     header nav a {
       display: inline-block;
       margin-left: 20px;
-      text-transform: uppercase;
       color: white; }
-      header nav a font {
-        size: 16px;
-        weight: 1000; }
       header nav a:hover {
         color: black; }
   header h1 {
@@ -267,9 +268,36 @@ header {
       border: white solid 10px; }
   header .kicker {
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: white; }
-    header .kicker font {
-      size: 14px;
-      weight: 700; }
+
+footer {
+  background: url(../img/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  background-size: cover; }
+  footer .lockup {
+    padding: 30px 50px; }
+    footer .lockup:after {
+      content: "";
+      display: table;
+      clear: both; }
+    footer .lockup .logo {
+      float: left;
+      height: 50px;
+      width: 50px;
+      margin-right: 30px; }
+      footer .lockup .logo path {
+        fill: rgba(0, 0, 0, 0.4); }
+    footer .lockup .content-wrap {
+      float: left; }
+      footer .lockup .content-wrap a {
+        display: inline-block;
+        margin-right: 20px;
+        text-transform: uppercase;
+        color: white; }
+        footer .lockup .content-wrap a font {
+          size: 16px;
+          weight: 1000; }
+        footer .lockup .content-wrap a:hover {
+          color: red; }
