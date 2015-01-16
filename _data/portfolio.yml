@@ -19,6 +19,18 @@ menu:
 - {name: Clients, url: '#'}
 - {name: Work, url: '#'}
 
+#project list
+projects:
+- {name: pone, folder: 'proj-1'}
+- {name: ptwo, folder: 'proj-2'}
+- {name: pthree, folder: 'proj-3'}
+- {name: pfour, folder: 'proj-4'}
+- {name: pfive, folder: 'proj-5'}
+- {name: psix, folder: 'proj-6'}
+- {name: pseven, folder: 'proj-7'}
+- {name: peight, folder: 'proj-8'}
+
+
 #change site images and content 
 logo: logo.svg
 bg: bg-img.jpg
