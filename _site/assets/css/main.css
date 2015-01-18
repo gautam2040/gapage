@@ -157,7 +157,7 @@ header, footer {
   background-position: 30px 30px, 0px 0px;
   background-size: 50px 50px, cover; }
 
-.alt-section .thumb-container .thumb-unit:hover .thumb-overlay {
+.section-work .thumb-container .thumb-unit:hover .thumb-overlay {
   -webkit-animation: animation 1000ms linear both;
   animation: animation 1000ms linear both; }
 
@@ -355,6 +355,63 @@ header, footer {
   100% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%; }
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: ''; }
+
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #1abc9c;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s; }
+
+.loader {
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 5em auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em #FFF; }
+
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #1abc9c;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease; }
+
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #BD5248;
@@ -648,15 +705,28 @@ footer {
     width: 220px; } }
 .alt-section {
   background: #1abc9c; }
-  .alt-section .thumb-container {
+
+.section-work {
+  overflow-x: hidden; }
+  .section-work .work-belt {
+    width: 200%;
+    position: relative;
+    left: 0%;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms; }
+    .section-work .work-belt .thumb-wrap, .section-work .work-belt .work-wrap {
+      width: 50%;
+      float: left; }
+  .section-work .thumb-container {
     max-width: 960px;
     margin: 0px auto;
     padding-bottom: 100px; }
-    .alt-section .thumb-container:after {
+    .section-work .thumb-container:after {
       content: "";
       display: table;
       clear: both; }
-    .alt-section .thumb-container .thumb-unit {
+    .section-work .thumb-container .thumb-unit {
       display: block;
       width: 25%;
       padding-top: 16%;
@@ -669,10 +739,10 @@ footer {
       -moz-perspective: 300;
       perspective: 300; }
       @media screen and (max-width: 700px) {
-        .alt-section .thumb-container .thumb-unit {
+        .section-work .thumb-container .thumb-unit {
           width: 50%;
           padding-top: 40%; } }
-      .alt-section .thumb-container .thumb-unit .thumb-overlay {
+      .section-work .thumb-container .thumb-unit .thumb-overlay {
         position: absolute;
         top: 0%;
         right: 0px;
@@ -709,14 +779,38 @@ footer {
         -webkit-transition: opacity, 300ms;
         -moz-transition: opacity, 300ms;
         transition: opacity, 300ms; }
-        .alt-section .thumb-container .thumb-unit .thumb-overlay strong {
+        .section-work .thumb-container .thumb-unit .thumb-overlay strong {
           display: block;
           padding: 0px 20px;
           color: white;
           text-transform: uppercase;
           font-size: 24px;
           line-height: 1.2; }
-      .alt-section .thumb-container .thumb-unit:hover {
+      .section-work .thumb-container .thumb-unit:hover {
         z-index: 2; }
-        .alt-section .thumb-container .thumb-unit:hover .thumb-overlay {
+        .section-work .thumb-container .thumb-unit:hover .thumb-overlay {
           opacity: 1; }
+  .section-work .work-container {
+    max-width: 600px;
+    margin: 0px auto;
+    position: relative;
+    display: none; }
+    .section-work .work-container h4 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 1.2; }
+    .section-work .work-container .work-return {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: -8px;
+      left: -50px;
+      cursor: pointer; }
+      .section-work .work-container .work-return path, .section-work .work-container .work-return circle {
+        opacity: 0.5; }
+  @media screen and (max-width: 700px) {
+    .section-work .work-container .work-return {
+      left: 0px; }
+    .section-work .work-container h4 {
+      margin-left: 60px; } }

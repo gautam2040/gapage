@@ -1,5 +1,22 @@
 .alt-section
 	background: $altsec-color
+
+.section-work 
+	overflow-x: hidden
+
+
+
+	.work-belt
+		width: 200%
+		position: relative
+		left: 0%
+		+transition(all 500ms)
+
+
+
+		.thumb-wrap, .work-wrap
+			width: 50%
+			float: left
 	
 	.thumb-container
 		max-width: 960px
@@ -56,6 +73,37 @@
 					@extend %animation
 					opacity: 1
 
+
+	.work-container
+		max-width: 600px
+		margin: 0px auto
+		position: relative
+		display: none
+
+		h4 
+			color: white
+			text-transform: uppercase
+			font-size: 24px
+			line-height: 1.2
+
+		.work-return
+			+size(50px)
+			+position(absolute, -8px null null -50px)
+			cursor: pointer
+			
+			path, circle
+				opacity: 0.5
+
+	@media screen and (max-width: 700px) 
+		.work-container
+			.work-return
+
+				left: 0px
+			h4
+				margin-left: 60px
+
+
+		
 								
 
 				
