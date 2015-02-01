@@ -1,8 +1,8 @@
 .clients-sec
 	width: 100%
 	position: relative
+	
 	.client-controls
-		z-index: -1
 		+position(absolute, 0px 0px 0px 0px)
 
 		> div
@@ -10,46 +10,66 @@
 			+size(40px)
 			cursor: pointer
 		.larrow
-			+position(absolute, 50% null null 10px)
+			+position(absolute, 50% null null 30px)
+			z-index: 1
 		.rarrow
-			+position(absolute, 50% 10px null null)
-
-
-
+			+position(absolute, 50% 30px null null)
+			cursor: pointer
+			z-index: 1
+			
 
 	.client-belt
-		max-width: 750px
-		margin: 0 auto
-		+display(flex)
+		position: relative
+		width: 100%
+		
 
-		.client-face
-			text-align: center
-			min-width: 300px
-			img 
-				+size(100px)
-				border-radius: 50%
-			.client-name
-				display: block
-				text-transform: uppercase
-				letter-spacing: 0.2em
-		.clent-content
-			position: relative
-			font-size: 18px
-			line-height: 30px
-			.squote
-				+position(absolute, -10px null null -10px)
-				+size(60px)
-				path 
-					fill: $accent
-					opacity: 0.5
-					z-index: -1
+		.client-unit
+			+position(absolute, 0px null null 50%)
+			max-width: 750px
+			margin-left: -375px
+			display: none
+			
+			&.active-client
+				+display(flex)
+				@extend %animation
+					
+
+			.client-face
+				text-align: center
+				min-width: 300px
+				img 
+					+size(100px)
+					border-radius: 50%
+				.client-name
+					display: block
+					text-transform: uppercase
+					letter-spacing: 0.2em
+			.clent-content
+				position: relative
+				font-size: 18px
+				line-height: 30px
+				.squote
+					+position(absolute, -10px null null -10px)
+					+size(60px)
+					svg 
+						+size(100%)
+						path 
+							fill: $accent
+							opacity: 0.5
+							z-index: -1
 	.client-logos
+		z-index: 4
+		cursor: pointer
 		width: 960px
-		margin: 30px auto 100px
+		margin: 300px auto 100px
 		+display(flex)
 		+justify-content(space-around)
 
-		img.active-client
-			box-shadow: 0px 4px 0px #000
+		img
+			z-index: 3
+
+
+			&.active-client
+				box-shadow: 0px 10px 0px #fff, 0px 15px 0px #000
 
 				

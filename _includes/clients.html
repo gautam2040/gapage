@@ -5,21 +5,23 @@
 		<div class="rarrow">{% include icons/icon-next.html %}</div>
 	</div>
 	<div class="client-belt">
-		<div class="client-face">
-			<img src="assets/img/clients/face-aaroni.jpg" alt="">
-			<strong class="client-name">robert downey</strong>
-			<em class="tag-line">Director of  Design, Quebec Inc.</em>
-		</div>
-		<div class="clent-content">
-			<div class="squote">{% include icons/icon-quote-mark.html %}</div>
-			<p><strong>In pellentesque faucibus vestibulum.</strong> Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in </p>
-			
-		</div>
+		{% for client in site.data.portfolio.clients %}
+			<div class="client-unit">
+				<div class="client-face">
+					<img src="assets/img/clients/{{client.img}}" alt="">
+					<strong class="client-name">{{client.title}}</strong>
+					<em class="tag-line">{{client.tagline}}</em>
+				</div>
+				<div class="clent-content">
+					<div class="squote">{% include icons/icon-quote-mark.html %}</div>
+					{{client.quote}}
+				</div>
+			</div>
+		{% endfor %}
 	</div>
 	<div class="client-logos">
-		<img class="active-client" src="assets/img/clients/logo1.png" alt="">
-		<img src="assets/img/clients/logo2.png" alt="">
-		<img src="assets/img/clients/logo3.png" alt="">
-		<img src="assets/img/clients/logo4.png" alt="">
+		{% for client in site.data.portfolio.clients %}
+		<img src="assets/img/clients/{{client.logo}}" alt="">
+		{% endfor %}
 	</div>
 </section>
