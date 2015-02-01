@@ -814,3 +814,83 @@ footer {
       left: 0px; }
     .section-work .work-container h4 {
       margin-left: 60px; } }
+
+.clients-sec {
+  width: 100%;
+  position: relative; }
+  .clients-sec .client-controls {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .clients-sec .client-controls > div {
+      margin-top: -20px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer; }
+    .clients-sec .client-controls .larrow {
+      position: absolute;
+      top: 50%;
+      left: 10px; }
+    .clients-sec .client-controls .rarrow {
+      position: absolute;
+      top: 50%;
+      right: 10px; }
+  .clients-sec .client-belt {
+    max-width: 750px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .clients-sec .client-belt .client-face {
+      text-align: center;
+      min-width: 300px; }
+      .clients-sec .client-belt .client-face img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%; }
+      .clients-sec .client-belt .client-face .client-name {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.2em; }
+    .clients-sec .client-belt .clent-content {
+      position: relative;
+      font-size: 18px;
+      line-height: 30px; }
+      .clients-sec .client-belt .clent-content .squote {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 60px;
+        width: 60px; }
+        .clients-sec .client-belt .clent-content .squote path {
+          fill: #555;
+          opacity: 0.5;
+          z-index: -1; }
+  .clients-sec .client-logos {
+    width: 960px;
+    margin: 30px auto 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center; }
+    .clients-sec .client-logos img.active-client {
+      box-shadow: 0px 4px 0px #000; }

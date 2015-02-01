@@ -14,10 +14,10 @@ skills:
 
 #skill list
 menu:
-- {name: About, url: '#'}
-- {name: Contact, url: '#'}
-- {name: Clients, url: '#'}
-- {name: Work, url: '#'}
+- {name: About, url: '#about'}
+- {name: Contact, url: '#contact'}
+- {name: Clients, url: '#clients'}
+- {name: Work, url: '#work'}
 
 #project list
 projects:

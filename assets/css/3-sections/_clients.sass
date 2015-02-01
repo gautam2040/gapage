@@ -1,0 +1,55 @@
+.clients-sec
+	width: 100%
+	position: relative
+	.client-controls
+		z-index: -1
+		+position(absolute, 0px 0px 0px 0px)
+
+		> div
+			margin-top: -20px
+			+size(40px)
+			cursor: pointer
+		.larrow
+			+position(absolute, 50% null null 10px)
+		.rarrow
+			+position(absolute, 50% 10px null null)
+
+
+
+
+	.client-belt
+		max-width: 750px
+		margin: 0 auto
+		+display(flex)
+
+		.client-face
+			text-align: center
+			min-width: 300px
+			img 
+				+size(100px)
+				border-radius: 50%
+			.client-name
+				display: block
+				text-transform: uppercase
+				letter-spacing: 0.2em
+		.clent-content
+			position: relative
+			font-size: 18px
+			line-height: 30px
+			.squote
+				+position(absolute, -10px null null -10px)
+				+size(60px)
+				path 
+					fill: $accent
+					opacity: 0.5
+					z-index: -1
+	.client-logos
+		width: 960px
+		margin: 30px auto 100px
+		+display(flex)
+		+justify-content(space-around)
+
+		img.active-client
+			box-shadow: 0px 4px 0px #000
+
+				
