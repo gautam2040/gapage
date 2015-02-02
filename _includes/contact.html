@@ -1,0 +1,12 @@
+<section class="contact-sec alt-section">
+	<h3>contact</h3>
+	
+	<div class="social-contacts">
+	{% for icon in site.data.portfolio.icons %}
+		<a href="{{icon.link}}" class="{{icon.title}}"></a>
+	{% endfor %}
+	</div>
+	
+	<hr class="bar">
+	<a href="mailto:gautamchowdary2040@gmail.com" class="biglink">artist@gmail.com</a>
+</section>

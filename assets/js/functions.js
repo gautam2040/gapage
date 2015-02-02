@@ -64,12 +64,14 @@ function clientStuff(){
 
 	$('.client-unit').first().addClass('active-client');
 	$('.client-logos img').first().addClass('active-client');
+	$('.mobile-nav span').first().addClass('active-client');
 
-	$('.client-logos img').click(function(){
+
+	$('.client-logos img, .mobile-nav span').click(function(){
 		// alert("hito hito");
 		var $allimg = $(this).parent().children();
 		var position = $allimg.index($(this));
-		$('.client-logos img').removeClass('active-client');
+		$('.client-logos img, .mobile-nav span').removeClass('active-client');
 		$(this).addClass('active-client');
 		$('.client-unit').removeClass('active-client');
 		$('.client-unit').eq(position).addClass('active-client');

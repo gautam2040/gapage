@@ -1,3 +1,6 @@
+::selection {
+  background: #ddd; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -412,6 +415,41 @@ header, footer {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-twitter-square:before {
+  content: "\f081"; }
+
+.icon-facebook-square:before {
+  content: "\f082"; }
+
+.icon-linkedin-square:before {
+  content: "\f08c"; }
+
+.icon-rss:before {
+  content: "\f09e"; }
+
+.icon-dice:before {
+  content: "\e915"; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #BD5248;
@@ -843,8 +881,24 @@ footer {
   .clients-sec .client-belt {
     position: relative;
     width: 100%; }
+    .clients-sec .client-belt .mobile-nav {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      display: none; }
+      .clients-sec .client-belt .mobile-nav span {
+        margin: 10px;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        color: #000;
+        border-radius: 50%;
+        border: 3px solid #000;
+        cursor: pointer; }
+        .clients-sec .client-belt .mobile-nav span.active-client {
+          border-color: red; }
     .clients-sec .client-belt .client-unit {
-      position: absolute;
+      position: relative;
       top: 0px;
       left: 50%;
       max-width: 750px;
@@ -890,7 +944,7 @@ footer {
     z-index: 4;
     cursor: pointer;
     width: 960px;
-    margin: 300px auto 100px;
+    margin: 100px auto 100px;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -898,6 +952,15 @@ footer {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     box-pack: center;
@@ -908,6 +971,82 @@ footer {
     justify-content: space-around;
     -ms-flex-pack: center; }
     .clients-sec .client-logos img {
-      z-index: 3; }
+      z-index: 3;
+      opacity: 0.5; }
       .clients-sec .client-logos img.active-client {
+        opacity: 1 !important;
         box-shadow: 0px 10px 0px #fff, 0px 15px 0px #000; }
+
+@media screen and (max-width: 750px) {
+  .client-controls {
+    display: none; }
+
+  .clients-sec {
+    width: 100%; }
+    .clients-sec .client-logos {
+      display: none; }
+    .clients-sec .client-belt .mobile-nav {
+      display: block; }
+    .clients-sec .client-belt .client-unit.active-client {
+      display: block !important; }
+      .clients-sec .client-belt .client-unit.active-client .client-face {
+        margin-bottom: 20px; }
+      .clients-sec .client-belt .client-unit.active-client .clent-content {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0px 10px;
+        text-align: center; } }
+.contact-sec {
+  text-align: center;
+  padding: 0 0 50px; }
+
+.social-contacts {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .social-contacts a {
+    display: block;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 50px;
+    background: #000;
+    transition: 500ms; }
+    .social-contacts a:hover {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5); }
+
+.bar {
+  width: 200px;
+  border: 4px solid #ddd;
+  margin: 0 auto 50px; }
+
+.biglink {
+  font-size: 40px; }

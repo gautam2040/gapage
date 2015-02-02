@@ -5,6 +5,11 @@
 		<div class="rarrow">{% include icons/icon-next.html %}</div>
 	</div>
 	<div class="client-belt">
+		<div class="mobile-nav">
+			{% for client in site.data.portfolio.clients %}
+				<span></span>
+			{% endfor %}
+		</div>
 		{% for client in site.data.portfolio.clients %}
 			<div class="client-unit">
 				<div class="client-face">
@@ -18,6 +23,7 @@
 				</div>
 			</div>
 		{% endfor %}
+		
 	</div>
 	<div class="client-logos">
 		{% for client in site.data.portfolio.clients %}

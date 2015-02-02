@@ -22,9 +22,28 @@
 		position: relative
 		width: 100%
 		
+		.mobile-nav
+			display: block
+			text-align: center
+			margin-bottom: 30px
+			display: none
+
+			span 
+				margin: 10px
+				display: inline-block
+				+size(16px)
+				color: #000
+				border-radius: 50%
+				border: 3px solid #000
+				cursor: pointer
+
+				&.active-client
+					border-color: red
+				
+				
 
 		.client-unit
-			+position(absolute, 0px null null 50%)
+			+position(relative, 0px null null 50%)
 			max-width: 750px
 			margin-left: -375px
 			display: none
@@ -48,6 +67,7 @@
 				position: relative
 				font-size: 18px
 				line-height: 30px
+
 				.squote
 					+position(absolute, -10px null null -10px)
 					+size(60px)
@@ -61,15 +81,49 @@
 		z-index: 4
 		cursor: pointer
 		width: 960px
-		margin: 300px auto 100px
+		margin: 100px auto 100px
 		+display(flex)
+		+align-items(flex-end)
 		+justify-content(space-around)
+		
 
 		img
 			z-index: 3
+			opacity: 0.5
 
 
 			&.active-client
+				opacity: 1 !important
 				box-shadow: 0px 10px 0px #fff, 0px 15px 0px #000
 
+@media screen and (max-width: 750px)
+	.client-controls
+		display: none
+	.clients-sec 
+		width: 100%
+		.client-logos
+			display: none			
+		.client-belt
+
+			.mobile-nav
+				display: block
+			
+			.client-unit.active-client
+				display: block !important
+
+				.client-face
+					margin-bottom: 20px
+
+				.clent-content
+					max-width: 400px
+					margin: 0 auto
+					padding: 0px 10px
+					text-align: center
+						
+
+
+
+
+	
+				
 				
